@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
@@ -13,7 +13,7 @@ import Img from 'gatsby-image'
  * - `StaticQuery`: https://gatsby.app/staticquery
  */
 
-const Image = () => (
+const Image: React.FC = () => (
   <StaticQuery
     query={graphql`
       query {
